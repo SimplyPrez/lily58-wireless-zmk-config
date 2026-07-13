@@ -83,31 +83,31 @@
         combo_arrow {
             key-positions = <31 32>;
             bindings = <&m_arrow>;
-            layers = <BASE>;
+            layers = <0>;
             timeout-ms = <35>;
         }; // N E -> "->"
         combo_eq {
             key-positions = <27 28>;
             bindings = <&m_eq>;
-            layers = <BASE>;
+            layers = <0>;
             timeout-ms = <35>;
         }; // S T -> "=="
         combo_neq {
             key-positions = <26 27>;
             bindings = <&m_neq>;
-            layers = <BASE>;
+            layers = <0>;
             timeout-ms = <35>;
         }; // R S -> "!="
         combo_scope {
             key-positions = <32 33>;
             bindings = <&m_scope>;
-            layers = <BASE>;
+            layers = <0>;
             timeout-ms = <35>;
         }; // E I -> "::"
         combo_walrus {
             key-positions = <28 29>;
             bindings = <&m_walrus>;
-            layers = <BASE>;
+            layers = <0>;
             timeout-ms = <35>;
         }; // T G -> ":="
     };
@@ -122,7 +122,7 @@
 &kp LGUI   &kp Q       &kp W       &kp E        &kp R        &kp T                                           &kp Y     &kp U        &kp I        &kp O       &kp P          &kp PLUS
 &kp LSHFT  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G                                           &kp H     &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI  &kp SQT
 &kp LCTRL  &kp Z       &kp X       &kp C        &kp V        &kp B    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N     &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RSHFT
-                                   &kp LALT     &lt SYM TAB  &kp ESC  &lt NAV SPACE       &lt NUM RET        &kp BSPC  &lt 4 DEL    &kp RALT
+                                   &kp LALT     &lt 3 TAB    &kp ESC  &lt 4 SPACE         &lt 1 RET          &kp BSPC  &lt 2 DEL    &kp RALT
             >;
         };
 
