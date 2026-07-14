@@ -150,11 +150,11 @@
 nav_layer {
     display-name = "Nav";
     bindings = <
-&trans   &trans     &trans    &trans     &trans     &trans                    &trans  &trans     &trans     &trans     &trans     &trans
-&kp ESC  &kp HOME   &kp UP    &kp END    &kp PG_UP  &trans                    &trans  &trans     &trans     &trans     &trans     &trans
-&trans   &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN  &trans                    &trans  &trans     &trans     &trans     &trans     &trans
-&trans   &kp INS    &kp TAB   &trans     &kp CAPS   &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans     &trans
-                              &trans     &trans     &trans  &trans    &trans  &trans     &trans     &trans
+&trans   &trans     &trans    &trans     &trans     &trans                    &trans   &trans     &trans     &trans     &trans     &trans
+&trans   &kp PG_UP  &kp HOME  &kp UP   	 &kp END    &trans                    &trans   &trans     &trans     &trans     &trans     &trans
+&trans   &kp PG_DN	&kp LEFT  &kp DOWN   &kp RIGHT  &trans                    &trans   &trans     &trans     &trans     &trans     &trans
+&trans   &kp CAPS 	&kp INS   &trans  	 &trans     &trans  &trans    &trans  &trans   &trans     &trans     &trans     &trans     &trans
+                              &trans     &trans     &trans  &trans    &trans  &trans   &trans     &trans
     >;
 };
 
