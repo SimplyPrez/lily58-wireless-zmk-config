@@ -32,6 +32,14 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
+
+	bspc_lt: backspace_layer_tap {
+        	compatible = "zmk,behavior-hold-tap";
+        	#binding-cells = <2>;
+        	flavor = "tap-preferred";
+        	tapping-term-ms = <200>;
+        	quick-tap-ms = <175>;
+		bindings = <&mo>, <&kp>;
         };
     };
 
@@ -41,11 +49,11 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                               &kp N6      &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-&kp LGUI   &kp Q       &kp W       &kp F        &kp P        &kp B                                &kp J       &kp L        &kp U        &kp Y       &kp SEMI    &kp PLUS
-&kp LSHFT  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                &kp M       &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp SQT
-&kp LCTRL  &kp Z       &kp X       &kp C        &kp D        &kp V      &kp LBKT       &kp RBKT   &kp K       &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp RSHFT
-                                   &kp LALT     &kp ESC      &lt 2 TAB  &lt 1 SPACE    &lt 1 RET  &lt 2 BSPC  &kp DEL      &kp RALT
+&kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                               &kp N6      	   &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
+&kp LGUI   &kp Q       &kp W       &kp F        &kp P        &kp B                                &kp J      	   &kp L        &kp U        &kp Y       &kp SEMI    &kp PLUS
+&kp LSHFT  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                &kp M       	   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp SQT
+&kp LCTRL  &kp Z       &kp X       &kp C        &kp D        &kp V      &kp LBKT       &kp RBKT   &kp K      	   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp RSHFT
+                                   &kp LALT     &kp ESC      &lt 2 TAB  &lt 1 SPACE    &lt 1 RET  &bspc_lt 2 BSPC  &kp DEL      &kp RALT
             >;
         };
 
