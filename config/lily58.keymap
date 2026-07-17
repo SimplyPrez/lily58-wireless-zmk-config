@@ -32,6 +32,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
+	};
 
 	bspc_lt: backspace_layer_tap {
         	compatible = "zmk,behavior-hold-tap";
