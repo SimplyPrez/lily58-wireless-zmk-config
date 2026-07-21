@@ -32,15 +32,15 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-	};
+        };
 
-	bspc_lt: backspace_layer_tap {
-        	compatible = "zmk,behavior-hold-tap";
-        	#binding-cells = <2>;
-        	flavor = "tap-preferred";
-        	tapping-term-ms = <200>;
-        	quick-tap-ms = <175>;
-		bindings = <&mo>, <&kp>;
+        bspc_lt: backspace_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&kp>;
         };
     };
 
@@ -50,10 +50,10 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                               &kp N6      	   &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-&kp LGUI   &kp Q       &kp W       &kp F        &kp P        &kp B                                &kp J      	   &kp L        &kp U        &kp Y       &kp SEMI    &kp PLUS
-&kp LSHFT  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                &kp M       	   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp SQT
-&kp LCTRL  &kp Z       &kp X       &kp C        &kp D        &kp V      &kp LBKT       &kp RBKT   &kp K      	   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp RSHFT
+&kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                               &kp N6           &kp N7       &kp N8       &kp N9      &kp N0      &kp EQUAL
+&kp LGUI   &kp Q       &kp W       &kp F        &kp P        &kp B                                &kp J            &kp L        &kp U        &kp Y       &kp SEMI    &kp MINUS
+&kp LSHFT  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                &kp M            &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp SQT
+&kp LCTRL  &kp Z       &kp X       &kp C        &kp D        &kp V      &kp LBKT       &kp RBKT   &kp K            &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp RSHFT
                                    &kp LALT     &kp ESC      &lt 2 TAB  &lt 1 SPACE    &lt 1 RET  &bspc_lt 2 BSPC  &kp DEL      &kp RALT
             >;
         };
@@ -61,11 +61,11 @@
         num_layer {
             display-name = "Num";
             bindings = <
-&trans  &trans         &trans         &trans          &trans           &trans                       &trans     &trans  &trans   &trans      &trans    &trans
-&trans  &kp EXCL       &kp AT         &kp LBRC        &kp RBRC         &kp PIPE                     &kp SLASH  &kp N7  &kp N8   &kp N9      &kp BSLH  &trans
-&trans  &hm LGUI HASH  &hm LALT DLLR  &hm LCTRL LPAR  &hm LSHIFT RPAR  &kp GRAVE                    &kp MINUS  &kp N4  &kp N5   &kp N6      &kp N0    &trans
-&trans  &kp PERCENT    &kp CARET      &kp LBKT        &kp RBKT         &kp TILDE  &trans    &trans  &kp ASTRK  &kp N1  &kp N2   &hm DOT N3  &kp PLUS  &trans
-                                      &trans          &trans           &trans     &trans    &trans  &trans     &trans  &kp DOT
+&trans  &trans         &trans         &trans          &trans           &trans                       &trans     &trans  &trans  &trans  &trans     &trans
+&trans  &kp EXCL       &kp AT         &kp LBRC        &kp RBRC         &kp PIPE                     &kp PLUS   &kp N7  &kp N8  &kp N9  &kp BSLH   &trans
+&trans  &hm LGUI HASH  &hm LALT DLLR  &hm LCTRL LPAR  &hm LSHIFT RPAR  &kp GRAVE                    &kp MINUS  &kp N4  &kp N5  &kp N6  &kt EQUAL  &trans
+&trans  &kp PERCENT    &kp CARET      &kp LBKT        &kp RBKT         &kp TILDE  &trans    &trans  &kp ASTRK  &kp N1  &kp N2  &kp N3  &kp DOT    &trans
+                                      &trans          &trans           &trans     &trans    &trans  &trans     &kp N0  &trans
             >;
         };
 
