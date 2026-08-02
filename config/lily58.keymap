@@ -62,7 +62,7 @@
             display-name = "Num";
             bindings = <
 &trans  &trans         &trans         &trans          &trans           &trans                       &trans     &trans  &trans  &trans  &trans     &trans
-&trans  &kp EXCL       &kp AT         &kp LBRC        &kp RBRC         &kp PIPE                     &kp PLUS   &kp N7  &kp N8  &kp N9  &kp BSLH   &trans
+&trans  &kp EXCL       &kp AT         &kp LBRC        &kp RBRC         &kp AMPS                     &kp PLUS   &kp N7  &kp N8  &kp N9  &kp BSLH   &trans
 &trans  &hm LGUI HASH  &hm LALT DLLR  &hm LCTRL LPAR  &hm LSHIFT RPAR  &kp GRAVE                    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans
 &trans  &kp PERCENT    &kp CARET      &kp LBKT        &kp RBKT         &kp TILDE  &trans    &trans  &kp ASTRK  &kp N1  &kp N2  &kp N3  &kp DOT    &trans
                                       &trans          &trans           &trans     &trans    &trans  &trans     &kp N0  &trans
